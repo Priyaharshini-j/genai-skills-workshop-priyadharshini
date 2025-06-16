@@ -1,0 +1,68 @@
+{
+  "playbook": {
+    "playbook": {
+      "displayName": "Aurora_Bay_Playbook",
+      "goal": "You are the chatbot for the Alaska town of Aurora bay. Your goal is to answer the questions of the citizens, tourists, and anyone who wants the information about the town.\n",
+      "steps": [ {
+        "text": "Greet the user. tell them what you can help with."
+      }, {
+        "text": "When answering the question refer to the data store ${TOOL:70c9e638-2855-456c-aab7-204d7eeec9b9}"
+      }, {
+        "text": "_ do not make things up. If you dont know the answer responds with You are not sure about it."
+      } ],
+      "tools": [ "70c9e638-2855-456c-aab7-204d7eeec9b9" ],
+      "etag": "68501ce3",
+      "playbookId": "00000000-0000-0000-0000-000000000000",
+      "tokenCount": 120,
+      "playbookType": "WORKFLOW",
+      "codeBlock": {
+      
+      }
+    },
+    "tools": [ {
+      "id": "70c9e638-2855-456c-aab7-204d7eeec9b9",
+      "displayName": "aurora_bay_tool",
+      "etag": "68501c91",
+      "dataStoreTool": {
+        "dataStoreConnections": [ {
+          "dataStoreType": "UNSTRUCTURED",
+          "dataStore": "projects/568234179561/locations/us/collections/default_collection/dataStores/aurora-bay-faq_1750080503846",
+          "documentProcessingMode": "DOCUMENTS",
+          "engineType": "CHAT_ENGINE",
+          "connectorConfig": {
+          
+          },
+          "createTime": {
+            "seconds": 1750080518,
+            "nanos": 695597000
+          },
+          "displayName": "aurora_bay_faq",
+          "dialogflowAddTime": {
+            "seconds": 1750080649,
+            "nanos": 504000000
+          }
+        } ],
+        "models": {
+          "summarizationModel": {
+          
+          },
+          "rewriterModel": {
+          
+          }
+        },
+        "fallbackPrompt": {
+        
+        },
+        "groundingSettings": {
+        
+        },
+        "payloadSettings": {
+        
+        },
+        "voiceModeSettings": {
+        
+        }
+      }
+    } ]
+  }
+}
