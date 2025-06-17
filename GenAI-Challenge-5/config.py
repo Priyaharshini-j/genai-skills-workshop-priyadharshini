@@ -1,0 +1,7 @@
+PROJECT_ID = "qwiklabs-gcp-02-4c9c7fb5e8ec"
+LOCATION = "us-central1"
+BQ_DATASET = "alaska_dept_of_snow"
+TABLE_RAW = "faq_data"
+TABLE_EMBEDDED = "faq_data_embedded"
+TABLE_ID = f"{PROJECT_ID}.{BQ_DATASET}.{TABLE_EMBEDDED}"
+RAW_TABLE_ID = f"{PROJECT_ID}.{BQ_DATASET}.{TABLE_RAW}"

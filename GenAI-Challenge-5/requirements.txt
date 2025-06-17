@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+google-cloud-bigquery
+google-cloud-aiplatform
+google-cloud-bigquery>=3.17.2
+google-cloud-aiplatform[evaluation]>=1.49.0
+pandas>=2.0.3
+vertexai>=1.38.0
+protobuf>=4.25.0
+ipython>=8.20.0 
+steamlit
